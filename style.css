@@ -62,7 +62,7 @@ nav ul li a {
 nav ul li a:hover {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF2771;
+	background: #DF4F72;
 }
 
 .dropdown {
@@ -79,7 +79,7 @@ nav ul li a:hover {
 	display: block;
 	text-decoration: none;
 	text-align: center;
-
+	cursor: pointer;
 	border: none;
 	outline: none;
 	padding-bottom: 15px;
@@ -190,6 +190,7 @@ a, button {
 .main_btn{
     background-color: #FFF;
     color: black;
+	cursor: pointer;
     text-align: center;
     font-size: 17px;
     padding: 10px 20px;
@@ -201,7 +202,7 @@ a, button {
 .main_btn:hover {
     background-color: black;
     color: white;
- }
+}
 
 /* LINE*/
 hr {
@@ -263,7 +264,11 @@ hr {
 	clear: both;
 }
 
-/* COURSES */
+.about_column a{
+	padding-left: 25px;
+}
+
+/* COURSES PREVIEW SWIPER*/
 
 :root {
     --swiper-theme-color: white !important;
@@ -279,7 +284,7 @@ hr {
 	color: white;
 	font-size: 18px;
 	background: #00acee;
-
+	border-radius: 10px;
 	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -332,6 +337,105 @@ hr {
     background-color:#2E3D49;
     color: white;
  }
+
+
+/* ALL COURSES*/
+.grid_row{
+	padding-left: 10%;
+}
+
+.grid_column{
+	float: left;
+	width: 18%;
+	padding: 15px;
+	height: 10px;
+	text-align: center;
+}
+
+.course_btn{
+    background-color: #FFF;
+    color: black;
+	cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+	width: 170px;
+}
+
+.course_btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* COURSE DESCRIPTION*/
+.course_description {
+	height: 500px;
+}
+
+.course_description h2{
+	font-size: 30px; 
+	padding-top: 50px; 
+	padding-bottom: 20px; 
+	padding-left: 65px; 
+	font-weight: bold;
+}
+
+
+/* DOWNLOAD RESOURCES */
+
+.download {
+	height: 700px;
+}
+
+.download p{
+	font-size: 50px; 
+	padding-top: 100px; 
+	padding-bottom: 30px;
+}
+
+.download_box {
+	height: 400px;
+	background-color: #DF4F72;
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 10px;
+}
+
+.download_box h2{
+	padding-top: 5%;
+	color: white;
+	font-weight: bold;
+	padding-bottom: 0%;
+}
+
+.download_box p{
+	padding-top: 40px;
+	color: white;
+	font-size: 20px;
+	width: 60%;
+	margin-left: 6%;
+}
+
+.download_btn{
+	margin-top: 10px;
+    background-color: black;
+    color: white;
+	cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+	width: 170px;
+	margin-left: 40%;
+}
+
+.download_btn:hover {
+    background-color: #FFD00B;
+    color: black;
+}
 
 /*FOOTER*/
 footer {

@@ -18,13 +18,13 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
                 <div class="dropdown">
-                    <button class="dropbtn">Courses
-                      <i class="fa fa-caret-down"></i>
-                    </button>
+                    <a href="courses.html">
+                        <button class="dropbtn">Courses <i class="fa fa-caret-down"></i></button>
+                    </a>
                     <div class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
+                        <a href="courses.html#popular_section">Trending</a>
+                        <a href="courses.html#all_section">All Courses</a>
+                        <a href="courses.html#download_section">Download</a>
                     </div>
                 </div> 
 				<li><a href="forum.html">Forum</a></li>
@@ -35,110 +35,210 @@
         
 		<div class="head-container">
 			<div class="quote">
-				<p>Courses Page</p>
-                <h5>Yet to be changed</h5>
-                <button class = "main_btn">View our courses</button>
+				<p>Courses</p>
+                <h5>Prepare for any subject and ace the exam with our course resources!</h5>
+                <a href="#popular_section"><button class = "main_btn">Popular Courses</button></a>
 			</div>
 			<div class="image-right">
-				<img src="assets/images/education-flex.jpg" alt="svg">
+				<img src="assets/images/courses-flex.jpg" alt="image">
 			</div>
 		</div>
 	</header>
 
-<!-- ABOUT -->
+<!-- POPULAR COURSES -->
     <br><br><br><br><br>
-	<div class="about_section" id="about_section">
+	<div class="about_section" id="popular_section">
         <br><br>
-		<center><p style="font-size: 50px;">About</p></center>
+		<center><p style="font-size: 50px;">Trending Courses</p></center>
         <br>
         <div class="about_row">
             <div class="about_column">
-                <img src="assets/images/about-1.png" alt="">
-                <h2>Resources</h2>
+                <a href="#dsa"><img src="assets/images/about-1.png" alt=""></a>
+                <h2>Data Structures</h2>
                 <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
             </div>
             <div class="about_column">
-                <img src="assets/images/about-2.png" alt="">
-                <h2>Mentors</h2>
+                <a href="#se"><img src="assets/images/about-2.png" alt=""></a>
+                <h2>Software Engineering</h2>
                 <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
             </div>
             <div class="about_column">
-                <img src="assets/images/about-3.png" alt="">
-                <h2>Lectures</h2>
+                <a href="#programming"><img src="assets/images/about-3.png" alt=""></a>
+                <h2>Programming</h2>
                 <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
             </div>
         </div>
     </div>
 
-<!-- COURSE PREVIEW -->
-	<div class="course" id="course_section">
-        
-        <center><p style="font-size: 50px; padding-top: 200px; padding-bottom: 50px;">Popular Courses</p></center>
+<!-- ALL COURSES -->
+	<div class="course" id="all_section">
+        <center><p style="font-size: 50px; padding-top: 200px; padding-bottom: 30px;">All Courses</p></center>
 
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class = "swiper_content">
-                      <h1>Title</h1>
-                      <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                      <button class = "swiper_btn">View our courses</button>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
+        <!-- COURSE BUTTONS -->
+        <div class="grid_row" style="padding-bottom: 70px;">
+            <div class="grid_column">
+                <a href="#dsa"><button class = "course_btn">DSA</button></a>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="grid_column">
+                <a href="#se"><button class = "course_btn">Software Eng</button></a>
+            </div>
+            <div class="grid_column">
+                <a href="#programming"><button class = "course_btn">Programming</button></a>
+            </div>
+            <div class="grid_column">
+                <a href="#all_section"><button class = "course_btn">CAO</button></a>
+            </div>
+            <div class="grid_column">
+                <a href="#all_section"><button class = "course_btn">TOC</button></a>
+            </div>
+        </div>
+        <div class="grid_row">
+            <div class="grid_column">
+                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+            </div>
+            <div class="grid_column">
+                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+            </div>
+            <div class="grid_column">
+                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+            </div>
+            <div class="grid_column">
+                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+            </div>
+            <div class="grid_column">
+                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+            </div>
         </div>
 
-        <!-- Swiper Script -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src = "swiper.js"></script>
+        <!-- COURSE DESCRIPTIONS -->
+        <!-- DSA -->
+        <div class = "course_description" id="dsa">
+            <h2 style="padding-top: 150px;">Data Structures and Algorithms</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class = "swiper_content">
+                          <h1>Lecture 1</h1>
+                          <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                          <button class = "swiper_btn">View our courses</button>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class = "swiper_content">
+                        <h1>Lecture 2</h1>
+                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                        <button class = "swiper_btn">View our courses</button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class = "swiper_content">
+                        <h1>Lecture 3</h1>
+                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                        <button class = "swiper_btn">View our courses</button>
+                    </div>
+                  </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    
+            <!-- Swiper Script -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src = "swiper_vertical.js"></script>
+        </div>
+
+        <!-- SE -->
+        <div class = "course_description" id="se">
+            <h2>Software Engineering</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class = "swiper_content">
+                          <h1>Title</h1>
+                          <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                          <button class = "swiper_btn">View our courses</button>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class = "swiper_content">
+                        <h1>Title</h1>
+                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                        <button class = "swiper_btn">View our courses</button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class = "swiper_content">
+                        <h1>Title</h1>
+                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                        <button class = "swiper_btn">View our courses</button>
+                    </div>
+                  </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    
+            <!-- Swiper Script -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src = "swiper_vertical.js"></script>
+        </div>
+
+        <!-- Programming -->
+        <div class = "course_description" id="programming">
+            <h2>Programming</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class = "swiper_content">
+                          <h1>Title</h1>
+                          <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                          <button class = "swiper_btn">View our courses</button>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class = "swiper_content">
+                        <h1>Title</h1>
+                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                        <button class = "swiper_btn">View our courses</button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class = "swiper_content">
+                        <h1>Title</h1>
+                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                        <button class = "swiper_btn">View our courses</button>
+                    </div>
+                  </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    
+            <!-- Swiper Script -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src = "swiper_vertical.js"></script>
+        </div>
 	</div>
-    <br><br><br><br>
+
+<!-- DOWNLOAD -->
+    <div class="download" id="download_section">
+        <center><p>Download Resources</p></center>
+        <div class = "download_box">
+            <h2>Title</h2>
+            <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?
+                This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+            <a href="#"><button class = "download_btn">Download</button></a>
+        </div>    
+    </div>
 
 <!-- FOOTER -->
-	<footer>
-		<div class="footer-container">
-			<div class="left-col">
-				<img src="assets/images/logoblack.png" style="width: 200px;">
-				<p class="rights-text"><b>Created By</b> Yashvardhan Gupta, Shrikar Jayaraman and Ananya Singh.</p>
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="assets/images/logoblack.png" style="width: 200px;">
+                <p class="rights-text"><b>Created By</b> Yashvardhan Gupta, Shrikar Jayaraman and Ananya Singh.</p>
                 <p>Vellore Institute of Technology, Chennai.</p>
-			</div>
-			<div class="right-col">
-				<h1 style="color: #fff">End of Page</h1>
-				<div class="border"></div>
-			</div>
-		</div>
-	</footer>
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">End of Page</h1>
+                <div class="border"></div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
