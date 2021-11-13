@@ -19,7 +19,7 @@
 				<li><a href="index.html">Home</a></li>
 				<div class="dropdown">
                     <a href="courses.html">
-                        <button class="dropbtn">Courses <i class="fa fa-caret-down"></i></button>
+                        <button class="dropbtn">Courses<i class="fa fa-caret-down"></i></button>
                     </a>
                     <div class="dropdown-content">
                         <a href="courses.html#popular_section">Trending</a>
@@ -35,13 +35,14 @@
         
 		<div class="head-container">
 			<div class="quote">
-				<p>Contact Page</p>
-                <h5>Yet to be made</h5>
-                <button class = "main_btn">View our courses</button>
+				<p>Hey There!</p>
+                <h5>Fill in the form below and we'll contact you.</h5>
+                <a href="#about_section"><button class = "main_btn">Contact Us</button></a>
 			</div>
 			<div class="image-right">
-				<img src="assets/images/education-flex.jpg" alt="svg">
+				<img src="assets/images/contact-flex.jpg" alt="svg">
 			</div>
+            <button
 		</div>
 	</header>
 
@@ -49,81 +50,102 @@
     <br><br><br><br><br>
 	<div class="about_section" id="about_section">
         <br><br>
-		<center><p style="font-size: 50px;">About</p></center>
-        <br>
-        <div class="about_row">
-            <div class="about_column">
-                <img src="assets/images/about-1.png" alt="">
-                <h2>Resources</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
-            </div>
-            <div class="about_column">
-                <img src="assets/images/about-2.png" alt="">
-                <h2>Mentors</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
-            </div>
-            <div class="about_column">
-                <img src="assets/images/about-3.png" alt="">
-                <h2>Lectures</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
-            </div>
-        </div>
-    </div>
-
-<!-- COURSE PREVIEW -->
-	<div class="course" id="course_section">
+		<center><p style="font-size: 50px;">Contact Us</p></center>
         
-        <center><p style="font-size: 50px; padding-top: 200px; padding-bottom: 50px;">Popular Courses</p></center>
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class = "swiper_content">
-                      <h1>Title</h1>
-                      <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                      <button class = "swiper_btn">View our courses</button>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
+        <form class="form-card">
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">Fill the Form</legend>
+                <div class="form-radio form-radio-inline">
+                    <div class="form-radio-legend"><b>Preferred Pronoun</b></div>
+                    <label class="form-radio-label">
+                        <input name=pronoun class="form-radio-field" type="radio" required value="He" />
+                        <i class="form-radio-button"></i>
+                        <span>He</span>
+                    </label>
+                    <label class="form-radio-label">
+                        <input name=pronoun class="form-radio-field" type="radio" required value="She" />
+                        <i class="form-radio-button"></i>
+                        <span>She</span>
+                    </label>
+                    <label class="form-radio-label">
+                        <input name=pronoun class="form-radio-field" type="radio" required value="They" />
+                        <i class="form-radio-button"></i>
+                        <span>They</span>
+                    </label>
+                    <label class="form-radio-label">
+                        <input name=pronoun class="form-radio-field" type="radio" required value="Ze" />
+                        <i class="form-radio-button"></i>
+                        <span>Ze</span>
+                    </label>
+                    <label class="form-radio-label">
+                        <input name=pronoun class="form-radio-field" type="radio" required value="A pronoun not listed" />
+                        <i class="form-radio-button"></i>
+                        <span>A pronoun not listed</span>
+                    </label>
+                    <label class="form-radio-label">
+                        <input name=pronoun class="form-radio-field" type="radio" required value="No pronoun preference" />
+                        <i class="form-radio-button"></i>
+                        <span>No pronoun preference</span>
+                    </label>
+                    <small class="form-element-hint">Feel free to choose</small>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
+                <div class="form-element form-input">
+                    <input class="form-element-field" placeholder="Please fill in your full name" type="input">
+                    <div class="form-element-bar"></div>
+                    <label class="form-element-label">Name</label>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
+                <div class="form-element form-input">
+                    <input class="form-element-field" placeholder="ie: 1/2/3/4" type="input">
+                    <div class="form-element-bar"></div>
+                    <label class="form-element-label">Current Year of Study</label>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
+                <div class="form-element form-input">
+                    <input class="form-element-field" placeholder="Full University Name" type="input">
+                    <div class="form-element-bar"></div>
+                    <label class="form-element-label">University</label>
                 </div>
-              </div>
+                <div class="form-element form-input">
+                    <input class="form-element-field" placeholder="B.Tech, M.Tech, etc" type="input">
+                    <div class="form-element-bar"></div>
+                    <label class="form-element-label">Specialization</label>
+                </div>
+                <div class="form-element form-input">
+                    <input class="form-element-field" placeholder=" " type="email">
+                    <div class="form-element-bar"></div>
+                    <label class="form-element-label">E-Mail</label>
+                    <small class="form-element-hint">We will never spam you!</small>
+                </div>
+                <div class="form-element form-select">
+                    <select class="form-element-field">
+                        <option disabled selected value="" class="form-select-placeholder"></option>
+                        <option id = "course">Course Updating</option>
+                        <option>Download Error</option>
+                        <option>Portal Issue</option>
+                        <option>Complaint</option>
+                        <option>Feedback</option>
+                    </select>
+                    <div class="form-element-bar"></div>
+                    <label class="form-element-label">Select your enquiry reason</label>
+                </div>
+                <div class="form-element form-textarea">
+                    <textarea class="form-element-field" placeholder=" "></textarea>
+                    <div class="form-element-bar"></div>
+                    <label class="form-element-label">Detailed Enquiry</label>
+                </div>
+            </fieldset>
+            <div class="form-actions">
+                <button class="form-btn" type="submit" id = "submit">Submit Form</button>
+                <button class="form-btn-cancel -nooutline" type="reset">Cancel</button>
+                <script>
+                    var pressedButton = document.getElementById("submit");
+                    pressedButton.addEventListener("click", function (event) {
+                        alert("Your Form has been submitted!")
+                    })
+                </script>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-        <!-- Swiper Script -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src = "swiper.js"></script>
-	</div>
-    <br><br><br><br>
+        </form>
+    </div>
+    </div>
 
 <!-- FOOTER -->
 	<footer>
