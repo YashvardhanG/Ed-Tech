@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <script src="script.js"></script>
+
 </head>
 <body>
 <!-- Navigation Bar -->
@@ -34,95 +36,71 @@
 		</nav>
         
 		<div class="head-container">
-			<div class="quote">
+			<div class="quote" style="transform: translate(-310px,-25px);">
 				<p>Forum Page</p>
-                <h5>Yet to be made</h5>
-                <button class = "main_btn">View our courses</button>
+                <h5>Get your doubts cleared here!</h5>
+                <a href="#doubt_section"><button class = "main_btn">Ask a Question</button></a>
 			</div>
-			<div class="image-right">
-				<img src="assets/images/forum-flex.svg" alt="svg">
-			</div>
+			<img src="assets/images/forum-flex.svg" alt="svg" style="height: 500px; transform: translate(280px,-300px);">
 		</div>
 	</header>
 
-<!-- ABOUT -->
+<!-- DOUBT -->
     <br><br><br><br><br>
-	<div class="about_section" id="about_section">
+	<div class="doubt_section" id="doubt_section">
         <br><br>
-		<center><p style="font-size: 50px;">About</p></center>
+		<center><p style="font-size: 50px; color: #000D;">Ask a Doubt</p></center>
         <br>
-        <div class="about_row">
-            <div class="about_column">
-                <img src="assets/images/about-1.png" alt="">
-                <h2>Resources</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
-            </div>
-            <div class="about_column">
-                <img src="assets/images/about-2.png" alt="">
-                <h2>Mentors</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
-            </div>
-            <div class="about_column">
-                <img src="assets/images/about-3.png" alt="">
-                <h2>Lectures</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
-            </div>
-        </div>
+		<input class = "doubt_input" type="text" placeholder="Put your question here">
+		<button class="doubt_button" type="submit" id = "submit">Submit Doubt</button>
+		<script>
+			var pressedButton = document.getElementById("submit");
+			pressedButton.addEventListener("click", function (event) {
+				alert("Your Form has been submitted!")
+			})
+		</script>
     </div>
-
-<!-- COURSE PREVIEW -->
+	
+<!-- ANSWERED -->
 	<div class="course" id="course_section">
-        
-        <center><p style="font-size: 50px; padding-top: 200px; padding-bottom: 50px;">Popular Courses</p></center>
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class = "swiper_content">
-                      <h1>Title</h1>
-                      <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                      <button class = "swiper_btn">View our courses</button>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-        <!-- Swiper Script -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src = "swiper.js"></script>
+        <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 50px;">Answered Questions</p></center>
 	</div>
+
+	<div class="accordion">
+		<div class="accordion-item">
+		  <a>Question-1</a>
+		  <div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		  </div>
+		</div>
+		<div class="accordion-item">
+		  <a>Question-2</a>
+		  <div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		  </div>
+		</div>
+		<div class="accordion-item">
+		  <a>Question-3</a>
+		  <div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		  </div>
+		</div>
+		<div class="accordion-item">
+		  <a>Question-4</a>
+		  <div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		  </div>
+		</div>
+		<div class="accordion-item">
+		  <a>Question-5</a>
+		  <div class="content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+		  </div>
+		</div>
+	</div>
+
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+	<script  src="doubt.js"></script>
     <br><br><br><br>
 
 <!-- FOOTER -->
