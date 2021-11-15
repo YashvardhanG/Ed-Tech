@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ed-Tech</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
 <!-- Navigation Bar -->
@@ -32,25 +30,64 @@
 				<li><a class = "active" href="login.html">Login</a></li>
 			</ul>
 		</nav>
-        
-<!-- LOGIN -->
-    <div class="form_section">
-        <div class="form_row">
-            <div class="form_col_left">
-                <img src="assets/images/login-flex.svg" alt="svg here">
-            </div>
-            <div class="form_col_right">
-                <div class="form_box">
-                    <h2>Login to Continue</h2>
-                    <form style="margin-top: 40px;">
-                        <input class = "form_input" type="email" id="username" name="username" placeholder="E-Mail">
-                        <input class = "form_input" type="password" id="password" name="password" placeholder="Password">
-                    </form>
-                    <a href="dashboard.html"><button class = "form_btn">Sign In</button></a>
+    </header>
+    
+<!-- SIGN IN -->
+    <div class="landing">
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button id = "signup_submit">Sign Up</button>
+                <script>
+                    var pressedButton = document.getElementById("signup_submit");
+                    pressedButton.addEventListener("click", function (event) {
+                        alert("You have been registered to the database!")
+                    })
+                </script>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form>
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button id = "signin_submit">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <script src="login.js"></script>
 
 <!-- FOOTER -->
 	<footer>
