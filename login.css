@@ -73,7 +73,7 @@ nav ul li a {
 nav ul li a:hover {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF4F72;
+	background: #FF4B2B;
 }
 
 .dropdown {
@@ -101,7 +101,7 @@ nav ul li a:hover {
 }
 
 .dropdown:hover .dropbtn {
-	background-color: #DF2771;
+	background-color: #FF4B2B;
 	color: white;
 }
 

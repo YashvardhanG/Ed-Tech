@@ -62,7 +62,7 @@ nav ul li a {
 nav ul li a:hover {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF4F72;
+	background: #FF4B2B;
 }
 
 .dropdown {
@@ -91,7 +91,7 @@ nav ul li a:hover {
 }
 
 .dropdown:hover .dropbtn {
-	background-color: #DF2771;
+	background-color: #FF4B2B;
 	color: white;
 }
 
@@ -414,7 +414,7 @@ a, button {
 
 .download_box {
 	height: 400px;
-	background-color: #DF4F72;
+	background: linear-gradient(to right, #FF4B2B, #FF416C);
 	width: 90%;
 	margin-left: 5%;
 	border-radius: 10px;
@@ -450,7 +450,7 @@ a, button {
 }
 
 .download_btn:hover {
-    background-color: #FFD00B;
+    background-color: white;
     color: black;
 }
 
@@ -525,7 +525,7 @@ a, button {
 
 .form-btn-cancel {
   transition: color 0.28s ease, transform 0.28s ease;
-  color: #DF2771;
+  color: #FF4B2B;
   border-color: currentColor;
   will-change: color, transform;
 }
@@ -535,7 +535,7 @@ a, button {
 }
 
 .form-btn-cancel::before {
-  background: #DF2771;
+  background: #FF4B2B;
   opacity: 0;
   transition: opacity 0.28s ease;
   will-change: opacity;
@@ -864,8 +864,8 @@ select.form-element-field {
 }
 
 .form_btn:hover {
-    background-color: #DF2771;
-	border-color: #DF2771;
+    background-color: #FF4B2B;
+	border-color: #FF4B2B;
     color: white;
 }
 
@@ -913,8 +913,8 @@ select.form-element-field {
 }
 
 .doubt_button:hover{
-	background-color: #DF2771;
-	border-color: #DF2771;
+	background-color: #FF4B2B;
+	border-color: #FF4B2B;
     color: white;
 }
 
@@ -940,16 +940,16 @@ select.form-element-field {
 .accordion a:hover,
 .accordion a:hover::after {
 	cursor: pointer;
-	color: #DF2771;
+	color: #FF4B2B;
 }
 
 .accordion a:hover::after {
-	border: 1px solid #DF2771;
+	border: 1px solid #FF4B2B;
 }
 
 .accordion a.active {
-	color: #DF2771;
-	border-bottom: 1px solid #DF2771;
+	color: #FF4B2B;
+	border-bottom: 1px solid #FF4B2B;
 	background-color: white;
 }
 
@@ -974,8 +974,8 @@ select.form-element-field {
 .accordion a.active::after {
 	font-family: 'Ionicons';
 	content: '\f209';
-	color: #DF2771;
-	border: 1px solid #DF2771;
+	color: #FF4B2B;
+	border: 1px solid #FF4B2B;
 }
 
 .accordion .content {
@@ -1049,7 +1049,7 @@ footer .left-col img{
 footer .border{
 	width: 100px;
 	height: 4px;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #FA4B37, #FF4B2B);
 	margin: 2px;
 }
 footer .newsletter-form {
@@ -1079,7 +1079,7 @@ footer .btn {
 	padding: 18px 40px;
 	font-size: 16px;
 	color: #f1f1f1;
-	background: linear-gradient(to right, #FA4B37, #DF2771);
+	background: linear-gradient(to right, #FA4B37, #FF4B2B);
 	border: none;
 	font-weight: 700;
 	outline: none;
