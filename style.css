@@ -17,7 +17,7 @@ body {
 }
 
 header {
-	height: 45vh;
+	height: auto;
 }
 
 .black {
@@ -154,39 +154,65 @@ a, button {
 	position: relative;
 }
 
-/* LANDING PAGE/HEAD */
-.head-container {
-	margin-top: 245px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
+/* CUSTOM FLEX */
+
+.flex {
+	height: 550px;
 }
 
-.quote {
-	width: 600px;
-	transform: translateY(-200px);
+.flex_row{
+	width: 100%;
 }
 
-.quote p {
+.flex_column_left{
+	margin-top: 16%;
+	margin-left: 100px;
+	float: left;
+	width: 40%;
+	text-align: left;
+}
+
+.flex_column_left p{
 	font-size: 50px;
 	color: #000;
-    padding-left: 25px;
     font-weight: bolder;
 }
 
-.quote h5 {
-    font-size: 25px;
+.flex_column_left h5{
+	font-size: 25px;
 	color: #2E3D49;
-    padding-left: 30px;
     font-weight: normal;
 }
 
-.image-right img{
-	width: 550px;
-    transform: translateY(-100px);
+.flex_column_right{
+	float: left;
+	margin-top: 8%;
 }
 
+.flex_column_right img{
+	height: 500px; 
+	width: 650px;
+}
+
+
+.flex_btn {
+    background-color: #FFF;
+    color: black;
+	cursor: pointer;
+    text-align: center;
+	margin-top: 100px;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.flex_btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* LANDING PAGE/HEAD */
 .main_btn{
     background-color: #FFF;
     color: black;
@@ -222,6 +248,7 @@ hr {
 	justify-content: center;
 	align-items: center;
 }
+
 .about_section .content {
 	margin: 10px;
 	text-align: center;
@@ -238,7 +265,8 @@ hr {
 }
 
 .about_column img{
-	height: 250px;
+	height: 255px;
+	margin-left: 15px;
 }
 
 .about_column img:hover{
@@ -251,7 +279,7 @@ hr {
 }
 
 .about_column h2{
-	padding: 5px;
+	text-align: center;
 }
 
 .about_row{
@@ -857,7 +885,7 @@ select.form-element-field {
 
 .doubt_input {
 	outline: none;
-	width: 810px;
+	width: 70%;
 	padding-top: 20px;
 	margin-top: 20px;
 	text-align: left;
@@ -884,7 +912,7 @@ select.form-element-field {
     background-color: #374B70;
     color: white;
     text-align: center;
-	margin-left: 990px;
+	margin-left: 82%;
     font-size: 15px;
 	height: 55px;
 	cursor: pointer;

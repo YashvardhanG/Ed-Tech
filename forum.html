@@ -34,20 +34,24 @@
 				<li><a class = "active" href="login.html">Login</a></li>
 			</ul>
 		</nav>
-        
-		<div class="head-container">
-			<div class="quote" style="transform: translate(-310px,-25px);">
-				<p>Forum Page</p>
-                <h5>Get your doubts cleared here!</h5>
-                <a href="#doubt_section"><button class = "main_btn">Ask a Question</button></a>
-			</div>
-			<img src="assets/images/forum-flex.svg" alt="svg" style="height: 500px; transform: translate(280px,-300px);">
-		</div>
 	</header>
+
+	<div class="flex">
+		<div class="flex_row">
+			<div class="flex_column_left">
+				<p>Forum Page</p>
+				<h5>Get your doubts cleared here!</h5>
+				<a href="#doubt_section"><button class = "flex_btn">Ask a Question</button></a>
+			</div>
+			<div class="flex_column_right">
+				<img src="assets/images/forum-flex.png" alt="svg">
+			</div>
+		</div>
+	</div>
 
 <!-- DOUBT -->
     <br><br><br><br><br>
-	<div class="doubt_section" id="doubt_section">
+	<div class="doubt_section" id="doubt_section" style="margin-bottom: 60px;">
         <br><br>
 		<center><p style="font-size: 50px; color: #000D;">Ask a Doubt</p></center>
         <br>
@@ -56,14 +60,18 @@
 		<script>
 			var pressedButton = document.getElementById("submit");
 			pressedButton.addEventListener("click", function (event) {
-				alert("Your Form has been submitted!")
+				alert("Your doubt has been recorded!")
 			})
 		</script>
     </div>
+	<center>
+		<p>*Scroll down for already Answered Questions</p>
+		<img src="assets/images/doubt-section.png" alt="svg" style="width: 1000px;">
+	</center>
 	
 <!-- ANSWERED -->
 	<div class="course" id="course_section">
-        <center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 50px;">Answered Questions</p></center>
+        <center><p style="font-size: 50px; padding-bottom: 50px; margin-top: 100px;">Answered Questions</p></center>
 	</div>
 
 	<div class="accordion">
