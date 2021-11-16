@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body style="background-color:  #1B263A;">
 <!-- Navigation Bar -->
 	<header id="header">
-		<nav>
-			<div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a></div>
+		<nav style="background-color: #000;">
+			<div class="logo"><a href="index.html"><img src="assets/images/logopureblack.png" alt="Logo"></a></div>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html" style="color: white;">Home</a></li>
 				<div class="dropdown">
                     <a href="courses.html">
-                        <button class="dropbtn">Courses <i class="fa fa-caret-down"></i></button>
+                        <button class="dropbtn" style="color: white; background-color: black;">Courses <i class="fa fa-caret-down"></i></button>
                     </a>
                     <div class="dropdown-content">
                         <a href="courses.html#popular_section">Trending</a>
@@ -27,108 +27,112 @@
                         <a href="courses.html#download_section">Download</a>
                     </div>
                 </div> 
-				<li><a href="forum.html">Forum</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-				<li><a class = "active" href="login.html">Login</a></li>
+				<li><a href="forum.html" style="color: white;">Forum</a></li>
+				<li><a href="contact.html" style="color: white;">Contact Us</a></li>
+				<li><a class = "active" href="login.html" style="color: white;">My Profile</a></li>
 			</ul>
 		</nav>
 	</header>
 
-    <div class="flex">
-        <div class="flex_row">
-            <div class="flex_column_left">
-                <p>Dashboard</p>
-                <h5>Yet to be made</h5>
-                <button class = "flex_btn">View our courses</button>
-            </div>
-            <div class="flex_column_right">
-                <img src="assets/images/education-flex.png" alt="svg" style="width: 625px;">
-            </div>
+<!-- Landing Page Div -->
+    <div class="dashboard-flex">
+        <div class="dashboard-flex-box">
+            <h2>Experience Education</h2>
+            <h3>with no limits</h3>
+            <img src="assets/images/dashbaoard-flex.png" alt="illustration">
         </div>
     </div>
 
-<!-- ABOUT -->
-    <br><br><br><br><br>
-	<div class="about_section" id="about_section">
-        <br><br>
-		<center><p style="font-size: 50px;">About</p></center>
-        <br>
-        <div class="about_row">
-            <div class="about_column">
-                <img src="assets/images/about-1.png" alt="">
-                <h2>Resources</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+<!-- Profile Div -->
+    <div class="dashboard">
+        <div id="mySidebar" class="sidebar">
+            <center><img src="assets/images/about-1.png" alt="DP"></center>
+            <br>
+            <a href="#account">Account Overview</a>
+            <a href="#plan">Current Plan</a>
+            <a href="#courses">Favourite Courses</a>
+            <a href="#complaint">Raise a Complaint</a>
+        </div>
+        <div class="dashboard-content">
+            <div class="dashboard-content-section" id="account">
+                <h2>Account Overview</h2>
+                <h5>Profile</h5>
+                <div class="section-row">
+                    <div class="section-row-title">
+                        <h6>Username</h6>
+                    </div>
+                    <div class="section-row-data">
+                        <p id="name">Yashvardhan Gupta</p>
+                    </div>
+                </div>
+                <div class="section-row">
+                    <div class="section-row-title">
+                        <h6>E-Mail</h6>
+                    </div>
+                    <div class="section-row-data">
+                        <p id="name">yashvardhang11@gmail.com</p>
+                    </div>
+                </div>
+                <div class="section-row">
+                    <div class="section-row-title">
+                        <h6>Country/Region</h6>
+                    </div>
+                    <div class="section-row-data">
+                        <p id="name">India</p>
+                    </div>
+                </div>
             </div>
-            <div class="about_column">
-                <img src="assets/images/about-2.png" alt="">
-                <h2>Mentors</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+            <div class="dashboard-content-section" id ="plan">
+                <h2>Current Plan</h2>
+                <br>
+                <div class="plan-box">
+                    <h2>Free Plan</h2>
+                    <p>Download any course | View all content.</p>
+                    <button class="download_btn">Upgrade to Premium</button>
+                </div>
             </div>
-            <div class="about_column">
-                <img src="assets/images/about-3.png" alt="">
-                <h2>Lectures</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+            <div class="dashboard-content-section" id="courses">
+                <h2>Favourite Courses</h2><br>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class = "swiper_content">
+                              <h1>Title</h1>
+                              <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                              <button class = "swiper_btn">View our courses</button>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class = "swiper_content">
+                            <h1>Title</h1>
+                            <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
+                            <button class = "swiper_btn">View our courses</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Swiper Script -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <script src = "swiper.js"></script>
+            </div>
+            
+            <div class="dashboard-content-section" id="complaint">
+                <h2 style="margin-top: 110px;">Raise a Complaint</h2>
+                <br>
+                <div class="plan-box" style="background: linear-gradient(to right, #B32ABE, #9722B9);">
+                    <h2>Got a Complaint?</h2>
+                    <p>Fill the form by using the button below and we'll contact you.</p>
+                    <button class="download_btn">Raise a complaint</button>
+                </div>
             </div>
         </div>
     </div>
-
-<!-- COURSE PREVIEW -->
-	<div class="course" id="course_section">
-        
-        <center><p style="font-size: 50px; padding-top: 200px; padding-bottom: 50px;">Popular Courses</p></center>
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class = "swiper_content">
-                      <h1>Title</h1>
-                      <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                      <button class = "swiper_btn">View our courses</button>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-        <!-- Swiper Script -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src = "swiper.js"></script>
-	</div>
-    <br><br><br><br>
 
 <!-- FOOTER -->
-	<footer>
+	<footer style="background: #222222;">
 		<div class="footer-container">
 			<div class="left-col">
 				<img src="assets/images/logoblack.png" style="width: 200px;">
