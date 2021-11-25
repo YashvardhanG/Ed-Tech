@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,15 @@
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
+
 <body>
-<!-- Navigation Bar -->
-	<header id="header">
-		<nav>
-			<div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a></div>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<div class="dropdown">
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav>
+            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <div class="dropdown">
                     <a href="courses.html">
                         <button class="dropbtn">Courses <i class="fa fa-caret-down"></i></button>
                     </a>
@@ -24,87 +26,91 @@
                         <a href="courses.html#all_section">All Courses</a>
                         <a href="courses.html#download_section">Download</a>
                     </div>
-                </div> 
-				<li><a href="forum.html">Forum</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-				<li><a class = "active" href="login.html">Login</a></li>
-			</ul>
-		</nav>
+                </div>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
-    
-<!-- SIGN IN -->
+
+    <!-- SIGN IN -->
     <div class="landing">
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1>Create Account</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button id = "signup_submit">Sign Up</button>
-                <script>
-                    var pressedButton = document.getElementById("signup_submit");
-                    pressedButton.addEventListener("click", function (event) {
-                        alert("You have been registered to the database!")
-                    })
-                </script>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <form>
-                <h1>Sign in</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button id = "signin_submit">Sign In</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
-                    <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="signIn">Sign In</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Sign Up</button>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form>
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <input class="input_button" type="button" value="Sign Up" id = "signup_submit">
+                    <script>
+                        var pressedButton = document.getElementById("signup_submit");
+                        pressedButton.addEventListener("click", function (event) {
+                            alert("You have been registered to the database!")
+                        })
+                    </script>
+                </form>
+            </div>
+
+            <div class="form-container sign-in-container">
+                <form>
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Forgot your password?</a>
+                   <input class="input_button" type="button" value="Sign In" id = "signin_submit">
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <script src="login.js"></script>
-    <br>
-    <a href="dashboard.html"><p>*User Dashboard (For Development)</p></a>
 
-<!-- FOOTER -->
-	<footer>
-		<div class="footer-container">
-			<div class="left-col">
-				<img src="assets/images/logoblack.png" style="width: 200px;">
-				<p class="rights-text"><b>Created By</b> Yashvardhan Gupta, Shrikar Jayaraman and Ananya Singh.</p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="assets/images/logoblack.png" style="width: 200px;">
+                <p class="rights-text"><b>Created By</b> Yashvardhan Gupta, Shrikar Jayaraman and Ananya Singh.</p>
                 <p>Vellore Institute of Technology, Chennai.</p>
-			</div>
-			<div class="right-col">
-				<h1 style="color: #fff">End of Page</h1>
-				<div class="border"></div>
-			</div>
-		</div>
-	</footer>
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">End of Page</h1>
+                <div class="border"></div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="login.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

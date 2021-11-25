@@ -197,6 +197,10 @@ nav ul li a:hover {
 	transition: transform 80ms ease-in;
 }
 
+.container button:hover {
+	cursor: pointer;
+}
+
 .container button:active {
 	transform: scale(0.95);
 }
@@ -235,6 +239,37 @@ nav ul li a:hover {
     border: 2px solid #FF4B2B;
 }
 
+input[type=button] {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	width: 150px;
+	height: 42px;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+input[type=button]:hover {
+	cursor: pointer;
+}
+
+input[type=button]:active {
+	transform: scale(0.95);
+}
+
+input[type=button]:focus {
+	outline: none;
+}
+
+input[type=button].ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
 
 .container {
 	background-color: #fff;
