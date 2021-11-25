@@ -46,16 +46,10 @@
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <span>or use your email for registration</span>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <input class="input_button" type="button" value="Sign Up" id = "signup_submit">
-                    <script>
-                        var pressedButton = document.getElementById("signup_submit");
-                        pressedButton.addEventListener("click", function (event) {
-                            alert("You have been registered to the database!")
-                        })
-                    </script>
+                    <input type="text" placeholder="Name" id="name_reg">
+                    <input type="email" placeholder="Email" id="email_reg">
+                    <input type="password" placeholder="Password" id = "password_reg">
+                    <input class="input_button" type="button" value="Sign Up" id = "signup_submit" onclick="register()">
                 </form>
             </div>
 
@@ -68,10 +62,10 @@
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <span>or use your account</span>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
+                    <input type="email" placeholder="Email" id="email_sign">
+                    <input type="password" placeholder="Password" id="password_sign">
                     <a href="#">Forgot your password?</a>
-                   <input class="input_button" type="button" value="Sign In" id = "signin_submit">
+                   <input class="input_button" type="button" value="Sign In" id = "signin_submit" onclick="login()">
                 </form>
             </div>
 
@@ -92,7 +86,6 @@
             </div>
         </div>
     </div>
-    <script src="login.js"></script>
 
     <!-- FOOTER -->
     <footer>
@@ -109,8 +102,9 @@
         </div>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
     <script src="login.js"></script>
-    <script src="script.js"></script>
 </body>
-
 </html>
