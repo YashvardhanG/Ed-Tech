@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ed-Tech</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
 </head>
 <body>
 <!-- Navigation Bar -->
@@ -29,7 +28,7 @@
                 </div> 
 				<li><a href="forum.html">Forum</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
-				<li><a class = "active" href="login.html">Login</a></li>
+				<li><a class = "active" id = "login_chk">Login</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -38,7 +37,7 @@
             <div class="flex_column_left">
                 <p>Welcome to xyz.ed!</p>
                 <h5>Comprehensive learning programs for all college students</h5>
-                <a href="courses.html"><button class = "flex_btn">View our courses</button></a>
+                <a href="courses.html"><button class = "flex_btn">Go to Course</button></a>
             </div>
             <div class="flex_column_right">
                 <img src="assets/images/education-flex.png" alt="svg" style="width: 625px;">
@@ -54,17 +53,17 @@
             <div class="about_column">
                 <img src="assets/images/about-1.png" alt="">
                 <h2>Resources</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+                <p>Our website has free resources on various topics available for all college students <b>#FreeTheCourses.</b></p>
             </div>
             <div class="about_column">
                 <img src="assets/images/about-2.png" alt="">
                 <h2>Mentors</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+                <p>xyz.ed has <b>trained professionals</b> and mentors, from all around the globe to give quality and credible lessons.</p>
             </div>
             <div class="about_column">
                 <img src="assets/images/about-3.png" alt="">
                 <h2>Lectures</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+                <p>We provide lectures for <b>all trending courses</b> and, update it periodically with the new educational policies.</p>
             </div>
         </div>
     </div>
@@ -79,37 +78,23 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                   <div class = "swiper_content">
-                      <h1>Title</h1>
-                      <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                      <button class = "swiper_btn">View our courses</button>
+                      <h1>Data Structures and Algorithms</h1>
+                      <p>Data Structures are the programmatic way of storing data so that data can be used efficiently. <b>This tutorial</b> will give you a great understanding on Data Structures.</p>
+                      <a href="courses.html#dsa"><button class = "swiper_btn">Go to Course</button></a>
                   </div>
               </div>
               <div class="swiper-slide">
                 <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
+                    <h1>Software Engineering</h1>
+                    <p>Software Engineering consists essentially of two parts: <b>Development and Evolution.</b> Software engineering applications are practically unlimited.</p>
+                    <a href="courses.html#se"><button class = "swiper_btn">Go to Course</button></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class = "swiper_content">
-                    <h1>Title</h1>
-                    <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                    <button class = "swiper_btn">View our courses</button>
+                    <h1>Programming</h1>
+                    <p>Programming is the mental process of thinking up instructions to give to a machine. Learn <b>C, C++, Python, Javascript, HTML, CSS, and much more!</b></p>
+                    <a href="courses.html#programming"><button class = "swiper_btn">Go to Course</button></a>
                 </div>
               </div>
             </div>
@@ -139,5 +124,9 @@
 		</div>
 	</footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
 </head>
+
 <body style="background-color:  #1B263A;">
 <!-- Navigation Bar -->
 	<header id="header">
@@ -29,7 +29,7 @@
                 </div> 
 				<li><a href="forum.html" style="color: white;">Forum</a></li>
 				<li><a href="contact.html" style="color: white;">Contact Us</a></li>
-				<li><a class = "active" href="login.html" style="color: white;">My Profile</a></li>
+				<li><a class = "active" style="color: white;" id = "logout">Logout</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -62,7 +62,7 @@
                         <h6>Username</h6>
                     </div>
                     <div class="section-row-data">
-                        <p id="name">Yashvardhan Gupta</p>
+                        <p id="username">Yashvardhan Gupta</p>
                     </div>
                 </div>
                 <div class="section-row">
@@ -70,7 +70,7 @@
                         <h6>E-Mail</h6>
                     </div>
                     <div class="section-row-data">
-                        <p id="name">yashvardhang11@gmail.com</p>
+                        <p id="email">yashvardhang11@gmail.com</p>
                     </div>
                 </div>
                 <div class="section-row">
@@ -78,7 +78,7 @@
                         <h6>Country/Region</h6>
                     </div>
                     <div class="section-row-data">
-                        <p id="name">India</p>
+                        <p id="country">India</p>
                     </div>
                 </div>
             </div>
@@ -97,16 +97,16 @@
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                           <div class = "swiper_content">
-                              <h1>Title</h1>
-                              <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                              <button class = "swiper_btn">View our courses</button>
+                              <h1>DSA</h1>
+                              <p>Data Structures are the programmatic way of storing data so that data can be used efficiently.</p>
+                              <a href="courses.html#dsa"><button class = "swiper_btn">Go to Course</button></a>
                           </div>
                       </div>
                       <div class="swiper-slide">
                         <div class = "swiper_content">
-                            <h1>Title</h1>
-                            <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                            <button class = "swiper_btn">View our courses</button>
+                            <h1>SE</h1>
+                            <p>Software Engineering consists essentially of two parts: <b>Development and Evolution.</b></p>
+                            <a href="courses.html#se"><button class = "swiper_btn">Go to Course</button></a>
                         </div>
                       </div>
                     </div>
@@ -125,7 +125,7 @@
                 <div class="plan-box" style="background: linear-gradient(to right, #B32ABE, #9722B9);">
                     <h2>Got a Complaint?</h2>
                     <p>Fill the form by using the button below and we'll contact you.</p>
-                    <button class="download_btn">Raise a complaint</button>
+                    <button class="download_btn" onclick="location.replace('contact.html')">Raise a complaint</button>
                 </div>
             </div>
         </div>
@@ -146,5 +146,9 @@
 		</div>
 	</footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>

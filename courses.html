@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
 </head>
 <body>
 <!-- Navigation Bar -->
@@ -29,7 +28,7 @@
                 </div> 
 				<li><a href="forum.html">Forum</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
-				<li><a class = "active" href="login.html">Login</a></li>
+				<li><a class = "active" id = "login_chk">Login</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -39,7 +38,7 @@
             <div class="flex_column_left">
                 <p>Courses</p>
                 <h5>Prepare for any subject and ace the exam with our course resources!</h5>
-                <a href="#popular_section"><button class = "flex_btn">View our courses</button></a>
+                <a href="#popular_section"><button class = "flex_btn">Go to Courses</button></a>
             </div>
             <div class="flex_column_right">
                 <img src="assets/images/courses-flex.png" alt="svg">
@@ -53,19 +52,19 @@
 		<center><p style="font-size: 50px; margin-top: 100px;">Trending Courses</p></center>
         <div class="about_row">
             <div class="about_column">
-                <a href="#dsa"><img src="assets/images/about-1.png" alt=""></a>
+                <a href="#dsa"><img src="assets/images/course-1.png" alt=""></a>
                 <h2>Data Structures</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+                <p>Learn the core of Data Structures, their applications and methodologies. <b>Stack, Queue, Heap</b>, and much more!</p>
             </div>
             <div class="about_column">
-                <a href="#se"><img src="assets/images/about-2.png" alt=""></a>
+                <a href="#se"><img src="assets/images/course-2.png" alt=""></a>
                 <h2>Software Engineering</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+                <p>Learn what does into the Development and Evolution Process. <b>Testing, Creation, Studies and Research.</b></p>
             </div>
             <div class="about_column">
-                <a href="#programming"><img src="assets/images/about-3.png" alt=""></a>
+                <a href="#programming"><img src="assets/images/course-3.png" alt=""></a>
                 <h2>Programming</h2>
-                <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text here?</p>
+                <p>Learn the most famous Programming Languages from industry experts. <b>C, C++, Python, JS, HTML, CSS, Dart</b> and More!</p>
             </div>
         </div>
     </div>
@@ -86,27 +85,27 @@
                 <a href="#programming"><button class = "course_btn">Programming</button></a>
             </div>
             <div class="grid_column">
-                <a href="#all_section"><button class = "course_btn">CAO</button></a>
+                <a href="https://www.javatpoint.com/computer-organization-and-architecture-tutorial"><button class = "course_btn">CAO</button></a>
             </div>
             <div class="grid_column">
-                <a href="#all_section"><button class = "course_btn">TOC</button></a>
+                <a href="https://www.geeksforgeeks.org/theory-of-computation-automata-tutorials/"><button class = "course_btn">TOC</button></a>
             </div>
         </div>
         <div class="grid_row">
             <div class="grid_column">
-                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+                <a href="https://ocw.mit.edu/courses/civil-and-environmental-engineering/1-151-probability-and-statistics-in-engineering-spring-2005/lecture-notes/"><button class = "course_btn">Statistics</button></a>
             </div>
             <div class="grid_column">
-                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+                <a href="http://www-math.mit.edu/~djk/calculus_beginners/"><button class = "course_btn">Calculus</button></a>
             </div>
             <div class="grid_column">
-                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+                <a href="https://www.tutorialspoint.com/dbms/index.htm"><button class = "course_btn">DBMS</button></a>
             </div>
             <div class="grid_column">
-                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+                <a href="https://www.engineer4free.com/circuits.html"><button class = "course_btn">Circuits</button></a>
             </div>
             <div class="grid_column">
-                <a href="#all_section"><button class = "course_btn">Some Course</button></a>
+                <a href="https://www.engineer4free.com/chemistry.html"><button class = "course_btn">Chemistry</button></a>
             </div>
         </div>
 
@@ -118,23 +117,23 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                       <div class = "swiper_content">
-                          <h1>Lecture 1</h1>
-                          <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                          <button class = "swiper_btn">View our courses</button>
+                          <h1>Lecture 1 (Introduction)</h1>
+                          <p>Learn the Concepts, Tips and Tricks of DSA from mentors. Click the button below to go to the lecture.</p>
+                          <a href="https://www.programiz.com/dsa/algorithm"><button class = "swiper_btn">Go to Lecture</button></a>
                       </div>
                   </div>
                   <div class="swiper-slide">
                     <div class = "swiper_content">
-                        <h1>Lecture 2</h1>
-                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                        <button class = "swiper_btn">View our courses</button>
+                        <h1>Lecture 2 (Basic Structures)</h1>
+                        <p>Continue to learn the Concepts, Tips and Tricks of DSA from mentors. Click the button below to go to the lecture.</p>
+                        <a href="https://www.programiz.com/dsa/stack"><button class = "swiper_btn">Go to Lecture</button></a>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class = "swiper_content">
-                        <h1>Lecture 3</h1>
-                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                        <button class = "swiper_btn">View our courses</button>
+                        <h1>Lecture 3 (Complex Structures)</h1>
+                        <p>Final Lecture! We deal with some problems and previous sample papers. Click the button below to go to the lecture.</p>
+                        <a href="https://www.programiz.com/dsa/linked-list"><button class = "swiper_btn">Go to Lecture</button></a>
                     </div>
                   </div>
                 <div class="swiper-pagination"></div>
@@ -152,23 +151,23 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                       <div class = "swiper_content">
-                          <h1>Title</h1>
-                          <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                          <button class = "swiper_btn">View our courses</button>
+                          <h1>Lecture 1 (Introduction)</h1>
+                          <p>Learn the Concepts, Tips and Tricks of Software Engineering from mentors. Click the button below to go to the lecture.</p>
+                          <a href="https://www.guru99.com/what-is-software-engineering.html"><button class = "swiper_btn">Go to Lecture</button></a>
                       </div>
                   </div>
                   <div class="swiper-slide">
                     <div class = "swiper_content">
-                        <h1>Title</h1>
-                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                        <button class = "swiper_btn">View our courses</button>
+                        <h1>Lecture 2 (Guide)</h1>
+                        <p>Continue to learn the Concepts, Tips and Tricks of SE from mentors. Click the button below to go to the lecture.</p>
+                        <a href="https://www.guru99.com/become-a-software-engineer.html"><button class = "swiper_btn">Go to Lecture</button></a>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class = "swiper_content">
-                        <h1>Title</h1>
-                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                        <button class = "swiper_btn">View our courses</button>
+                        <h1>Lecture 3 (Questions)</h1>
+                        <p>Final Lecture! We deal with some problems and previous sample papers. Click the button below to go to the lecture.</p>
+                        <a href="https://www.guru99.com/software-engineering-interview-questions.html"><button class = "swiper_btn">Go to Lecture</button></a>
                     </div>
                   </div>
                 <div class="swiper-pagination"></div>
@@ -186,23 +185,23 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                       <div class = "swiper_content">
-                          <h1>Title</h1>
-                          <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                          <button class = "swiper_btn">View our courses</button>
+                          <h1>Lecture 1 (C Programming)</h1>
+                          <p>Learn the Concepts, Tips and Tricks of Programming from mentors. Click the button below to go to the lecture.</p>
+                          <a href="https://www.programiz.com/c-programming"><button class = "swiper_btn">Go to Lecture</button></a>
                       </div>
                   </div>
                   <div class="swiper-slide">
                     <div class = "swiper_content">
-                        <h1>Title</h1>
-                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                        <button class = "swiper_btn">View our courses</button>
+                        <h1>Lecture 2 (Python)</h1>
+                        <p>Continue to learn the Concepts, Tips and Tricks of Programming from mentors. Click the button below to go to the lecture.</p>
+                        <a href="https://www.programiz.com/python-programming"><button class = "swiper_btn">Go to Lecture</button></a>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class = "swiper_content">
-                        <h1>Title</h1>
-                        <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-                        <button class = "swiper_btn">View our courses</button>
+                        <h1>Lecture 3 (Javascript)</h1>
+                        <p>Final Lecture! We deal with some problems and previous sample papers. Click the button below to go to the lecture.</p>
+                        <a href="https://www.programiz.com/javascript"><button class = "swiper_btn">Go to Lecture</button></a>
                     </div>
                   </div>
                 <div class="swiper-pagination"></div>
@@ -218,10 +217,9 @@
     <div class="download" id="download_section">
         <center><p>Download Resources</p></center>
         <div class = "download_box">
-            <h2>Title</h2>
-            <p>This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?
-                This is a pretty big paragraph about the course I am about to mention here. What if I add more text on here?</p>
-            <a href="#"><button class = "download_btn">Download</button></a>
+            <h2>University Notes</h2>
+            <p>Download university notes attested and verified by industry experts, teachers, mentors and top performing alumins.</p>
+            <a href="https://www.technicalsymposium.com/alldepartment_lecturenotes.html"><button class = "download_btn">Download</button></a>
         </div>    
     </div>
 
@@ -240,5 +238,9 @@
         </div>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>

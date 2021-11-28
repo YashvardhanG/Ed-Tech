@@ -327,6 +327,8 @@ a, button {
 .swiper_content h1{
 	position: fixed;
 	color:white;
+	width: 600px;
+	text-align: left;
 	font-weight: bolder;
 	transform: translate(-400px,-100px);
 }
@@ -353,6 +355,7 @@ a, button {
 .swiper_btn:hover {
     background-color:#2E3D49;
     color: white;
+	cursor: pointer;
  }
 
 
@@ -422,6 +425,7 @@ a, button {
 
 .download_box h2{
 	padding-top: 5%;
+	padding-left: 6%;
 	color: white;
 	font-weight: bold;
 	padding-bottom: 0%;
