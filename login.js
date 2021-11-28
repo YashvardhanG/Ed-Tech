@@ -1,12 +1,3 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyArhE-X9Fpu6q8emA1eUukLUvWsaea1_A0",
-    authDomain: "ed-tech-f6bd8.firebaseapp.com",
-    projectId: "ed-tech-f6bd8",
-    storageBucket: "ed-tech-f6bd8.appspot.com",
-    messagingSenderId: "717645366420",
-    appId: "1:717645366420:web:46e48353e206febafc2081"
-};
-
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const signIn = document.getElementById('signin_submit');
@@ -19,20 +10,6 @@ signUpButton.addEventListener('click', () => {
 
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
-});
-
-firebase.initializeApp(firebaseConfig);
-// Initialize variables
-const auth = firebase.auth()
-const database = firebase.database()
-
-auth.onAuthStateChanged(user => {
-    if (user) {
-        console.log('User is logged in: ', user);
-    }
-    else {
-        console.log('User is Logged Out');
-    }
 });
 
 // Set up our register function

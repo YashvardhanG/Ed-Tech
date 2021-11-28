@@ -10,11 +10,13 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth()
 const database = firebase.database()
+const login_chk = document.getElementById("login_chk");
 
 var status = 0;
 auth.onAuthStateChanged(user => {
     if (user) {
         console.log('User is logged in: ', user);
+        document.getElementById("login_chk").innerHTML = "My Account";
         status = 1;
         localStorage.setItem("status_var", status);
     } else {
@@ -24,7 +26,6 @@ auth.onAuthStateChanged(user => {
     }
 });
 
-const login_chk = document.getElementById("login_chk");
 login_chk.addEventListener('click', () => {
   if (status == 1) {
     location.replace("dashboard.html");
