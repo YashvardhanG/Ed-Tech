@@ -21,12 +21,12 @@ function register() {
 
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Email or Password is Outta Line!!')
+        alert('Email or Password Invalid! (Input a valid E-Mail or Password must be >= 6 Characters)')
         return
         // Don't continue running the code
     }
     if (validate_field(full_name) == false) {
-        alert('One Field is Outta Line!!')
+        alert('Fill in your Name!')
         return
     }
 
@@ -49,8 +49,13 @@ function register() {
             // Push to Firebase Database
             database_ref.child('users/' + user.uid).set(user_data)
 
-            // DOne
-            alert('User Created!!')
+            // Done
+            alert('User Registered!')
+            container.classList.remove("right-panel-active");
+            auth.signOut();
+            document.getElementById("title_change").innerHTML = "You've Registered!";
+            document.getElementById("para_change").innerHTML = "Now you may use your registered details to login!";
+            signUpButton.remove();
         })
 
         .catch(function (error) {
@@ -70,7 +75,7 @@ function login() {
 
     // Validate input fields
     if (validate_email(email) == false || validate_password(password) == false) {
-        alert('Email or Password is Outta Line!!')
+        alert('Email or Password Invalid! (Input a valid E-Mail or Password must be >= 6 Characters)')
         return
         // Don't continue running the code
     }
@@ -92,7 +97,7 @@ function login() {
             database_ref.child('users/' + user.uid).update(user_data)
 
             // DOne
-            alert('User Logged In!')
+            alert('User Logged In Successfully!')
             window.location = "dashboard.html"
 
         })
