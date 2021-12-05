@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body style="background-color:  #1B263A;">
-<!-- Navigation Bar -->
-	<header id="header">
-		<nav style="background-color: #000;">
-			<div class="logo"><a href="index.html"><img src="assets/images/logopureblack.png" alt="Logo"></a></div>
-			<ul>
-				<li><a href="index.html" style="color: white;">Home</a></li>
-				<div class="dropdown">
+    <!-- Navigation Bar -->
+    <header id="header">
+        <nav style="background-color: #000;">
+            <div class="logo"><a href="index.html"><img src="assets/images/logopureblack.png" alt="Logo"></a></div>
+            <ul>
+                <li><a href="index.html" style="color: white;">Home</a></li>
+                <div class="dropdown">
                     <a href="courses.html">
-                        <button class="dropbtn" style="color: white; background-color: black;">Courses <i class="fa fa-caret-down"></i></button>
+                        <button class="dropbtn" style="color: white; background-color: black;">Courses <i
+                                class="fa fa-caret-down"></i></button>
                     </a>
                     <div class="dropdown-content">
                         <a href="courses.html#popular_section">Trending</a>
                         <a href="courses.html#all_section">All Courses</a>
                         <a href="courses.html#download_section">Download</a>
                     </div>
-                </div> 
-				<li><a href="forum.html" style="color: white;">Forum</a></li>
-				<li><a href="contact.html" style="color: white;">Contact Us</a></li>
-				<li><a class = "active" style="color: white;" id = "logout">Logout</a></li>
-			</ul>
-		</nav>
-	</header>
+                </div>
+                <li><a href="forum.html" style="color: white;">Forum</a></li>
+                <li><a href="contact.html" style="color: white;">Contact Us</a></li>
+                <li><a class="active" style="color: white;" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Landing Page Div -->
+    <!-- Landing Page Div -->
     <div class="dashboard-flex">
         <div class="dashboard-flex-box">
             <h2>Experience Education</h2>
@@ -43,7 +44,7 @@
         </div>
     </div>
 
-<!-- Profile Div -->
+    <!-- Profile Div -->
     <div class="dashboard">
         <div id="mySidebar" class="sidebar">
             <center><img src="assets/images/about-1.png" alt="DP"></center>
@@ -82,33 +83,41 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-content-section" id ="plan">
+            <div class="dashboard-content-section" id="plan">
                 <h2>Current Plan</h2>
                 <br>
                 <div class="plan-box">
                     <h2>Free Plan</h2>
                     <p>Download any course | View all content.</p>
                     <button class="download_btn" id="upgrade">Upgrade to Premium</button>
+                    <script>
+                        var pressedButton = document.getElementById("upgrade");
+                        pressedButton.addEventListener("click", function (event) {
+                            alert("Currently Unavailable");
+                        })
+                    </script>
                 </div>
             </div>
             <div class="dashboard-content-section" id="courses">
                 <h2>Favourite Courses</h2><br>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                          <div class = "swiper_content">
-                              <h1>DSA</h1>
-                              <p>Data Structures are the programmatic way of storing data so that data can be used efficiently.</p>
-                              <a href="courses.html#dsa"><button class = "swiper_btn">Go to Course</button></a>
-                          </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class = "swiper_content">
-                            <h1>SE</h1>
-                            <p>Software Engineering consists essentially of two parts: <b>Development and Evolution.</b></p>
-                            <a href="courses.html#se"><button class = "swiper_btn">Go to Course</button></a>
+                        <div class="swiper-slide">
+                            <div class="swiper_content">
+                                <h1>DSA</h1>
+                                <p>Data Structures are the programmatic way of storing data so that data can be used
+                                    efficiently.</p>
+                                <a href="courses.html#dsa"><button class="swiper_btn">Go to Course</button></a>
+                            </div>
                         </div>
-                      </div>
+                        <div class="swiper-slide">
+                            <div class="swiper_content">
+                                <h1>SE</h1>
+                                <p>Software Engineering consists essentially of two parts: <b>Development and
+                                        Evolution.</b></p>
+                                <a href="courses.html#se"><button class="swiper_btn">Go to Course</button></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -116,9 +125,9 @@
                 </div>
                 <!-- Swiper Script -->
                 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-                <script src = "swiper.js"></script>
+                <script src="swiper.js"></script>
             </div>
-            
+
             <div class="dashboard-content-section" id="complaint">
                 <h2 style="margin-top: 110px;">Raise a Complaint</h2>
                 <br>
@@ -131,24 +140,25 @@
         </div>
     </div>
 
-<!-- FOOTER -->
-	<footer style="background: #222222;">
-		<div class="footer-container">
-			<div class="left-col">
-				<img src="assets/images/logoblack.png" style="width: 200px;">
-				<p class="rights-text"><b>Created By</b> Yashvardhan Gupta, Shrikar Jayaraman and Ananya Singh.</p>
+    <!-- FOOTER -->
+    <footer style="background: #222222;">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="assets/images/logoblack.png" style="width: 200px;">
+                <p class="rights-text"><b>Created By</b> Yashvardhan Gupta, Shrikar Jayaraman and Ananya Singh.</p>
                 <p>Vellore Institute of Technology, Chennai.</p>
-			</div>
-			<div class="right-col">
-				<h1 style="color: #fff">End of Page</h1>
-				<div class="border"></div>
-			</div>
-		</div>
-	</footer>
+            </div>
+            <div class="right-col">
+                <h1 style="color: #fff">End of Page</h1>
+                <div class="border"></div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
     <script src="dashboard.js"></script>
 </body>
+
 </html>
