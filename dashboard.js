@@ -44,3 +44,8 @@ logout.addEventListener('click', () => {
     alert('Successfully signed out!');
     location.replace("index.html")
 });
+
+const upgrade = document.getElementById('upgrade');
+logout.addEventListener('click', () => {
+    alert('Will take you to upgrade page');
+});

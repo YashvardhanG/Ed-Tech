@@ -30,7 +30,7 @@ pressedButton.addEventListener("click", function (event) {
     if (question.length >= 10)
     {
       alert("Your doubt has been recorded!");
-      document.getElementById("doubt").innerHTML += "<b>Your submitted doubt is:</b> " + question;
+      document.getElementById("doubt").innerHTML = "<b>Your submitted doubt is:</b> " + question;
     }
 
     else

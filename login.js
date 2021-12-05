@@ -143,3 +143,23 @@ function validate_field(field) {
         return true
     }
 }
+
+document.getElementById("email_sign").addEventListener("keyup", function(e) {
+    if (e.keyCode === 13) {document.getElementById("signin_submit").click();}
+})
+
+document.getElementById("password_sign").addEventListener("keyup", function(e) {
+    if (e.keyCode === 13) {document.getElementById("signin_submit").click();}
+})
+
+document.getElementById("name_reg").addEventListener("keyup", function(e) {
+    if (e.keyCode === 13) {document.getElementById("signup_submit").click();}
+})
+
+document.getElementById("email_reg").addEventListener("keyup", function(e) {
+    if (e.keyCode === 13) {document.getElementById("signup_submit").click();}
+})
+
+document.getElementById("password_reg").addEventListener("keyup", function(e) {
+    if (e.keyCode === 13) {document.getElementById("signup_submit").click();}
+})
