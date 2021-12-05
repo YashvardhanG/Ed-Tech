@@ -34,6 +34,12 @@ pressedButton.addEventListener("click", function (event) {
     }
   }
 
+  else if (status == 0)
+  {
+    alert("You need to login first!");
+    location.replace("login.html")
+  }
+
   else
   {
     alert("The doubt must be at least 10 characters!")
