@@ -19,22 +19,7 @@ document.getElementById("question").addEventListener("keyup", function(e)
 const pressedButton = document.getElementById("submit");
 pressedButton.addEventListener("click", function (event) {
   const question = document.getElementById("question").value;
-  if (question.length > 10)
-  {
-    if (status == 1)
-    {
-      alert("Your doubt has been recorded!");
-      document.getElementById("doubt").innerHTML += "<b>Your submitted doubt is:</b> " + question;
-    }
-
-    else
-    {
-      alert("You need to login first!");
-      location.replace("login.html")
-    }
-  }
-
-  else if (status == 0)
+  if (status == 0)
   {
     alert("You need to login first!");
     location.replace("login.html")
@@ -42,6 +27,15 @@ pressedButton.addEventListener("click", function (event) {
 
   else
   {
-    alert("The doubt must be at least 10 characters!")
+    if (question.length >= 10)
+    {
+      alert("Your doubt has been recorded!");
+      document.getElementById("doubt").innerHTML += "<b>Your submitted doubt is:</b> " + question;
+    }
+
+    else
+    {
+      alert("The doubt must be at least 10 characters!")
+    }
   }
 })
