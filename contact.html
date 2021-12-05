@@ -50,66 +50,19 @@
     <br><br><br><br><br>
 	<div class="about_section" id="about_section">
         <br><br>
-		<center><p style="font-size: 50px;">Contact Us</p></center>
-        
-        <form class="form-card">
-            <fieldset class="form-fieldset">
-                <legend class="form-legend">Fill the Form</legend>
-                <div class="form-element form-input">
-                    <input class="form-element-field" placeholder="Please fill in your full name" type="input">
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label">Name</label>
-                </div>
-                <div class="form-element form-input">
-                    <input class="form-element-field" placeholder="Please fill in your full name" type="input">
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label">Preferred Pronouns</label>
-                </div>
-                <div class="form-element form-input">
-                    <input class="form-element-field" placeholder="ie: 1/2/3/4" type="input">
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label">Current Year of Study</label>
-                </div>
-                <div class="form-element form-input">
-                    <input class="form-element-field" placeholder="Full University Name" type="input">
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label">University</label>
-                </div>
-                <div class="form-element form-input">
-                    <input class="form-element-field" placeholder="B.Tech, M.Tech, etc" type="input">
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label">Specialization</label>
-                </div>
-                <div class="form-element form-input">
-                    <input class="form-element-field" placeholder=" " type="email">
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label">E-Mail</label>
-                    <small class="form-element-hint">We will never spam you!</small>
-                </div>
-                <div class="form-element form-select">
-                    <select class="form-element-field">
-                        <option disabled selected value="" class="form-select-placeholder"></option>
-                        <option id = "course">Course Updating</option>
-                        <option>Download Error</option>
-                        <option>Portal Issue</option>
-                        <option>Complaint</option>
-                        <option>Feedback</option>
-                    </select>
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label">Select your enquiry reason</label>
-                </div>
-                <div class="form-element form-textarea">
-                    <textarea class="form-element-field" placeholder=" "></textarea>
-                    <div class="form-element-bar"></div>
-                    <label class="form-element-label">Detailed Enquiry</label>
-                </div>
-            </fieldset>
-            <div class="form-actions">
-                <button class="form-btn" type="submit" id = "submit">Submit Form</button>
-                <button class="form-btn-cancel -nooutline" type="reset">Cancel</button>
-            </div>
-        </form>
-    </div>
+		<center>
+        <p style="font-size: 50px;">Contact Us</p><br>
+        <iframe
+        src="https://tally.so/embed/n0Z8j3?hideTitle=1"
+        width="60%"
+        height="1000"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        style="box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); padding-top: 50px; margin-bottom: 50px;"
+        title="Contact Form (Ed-Tech)">
+        </iframe>
+        </center>
     </div>
 
 <!-- FOOTER -->
@@ -131,11 +84,5 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
     <script src="auth.js"></script>
-    <script>
-        var pressedButton = document.getElementById("submit");
-        pressedButton.addEventListener("click", function (event) {
-            alert("Your Form has been submitted!")
-        })
-    </script>
 </body>
 </html>
