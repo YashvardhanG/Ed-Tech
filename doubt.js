@@ -8,7 +8,6 @@ items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 var status = localStorage.getItem("status_var");
 console.log(status);
-status = 1;
 
 document.getElementById("question").addEventListener("keyup", function(e) 
 {
